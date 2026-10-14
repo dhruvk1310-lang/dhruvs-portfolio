@@ -311,6 +311,25 @@
       color: var(--muted);
     }
 
+    .row-link { position: absolute; inset: 0; z-index: 1; }
+    .ppt-link {
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      margin-top: 0.6rem;
+      padding: 0.2rem 0.6rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--row-color, var(--c1));
+      border: 1px solid var(--row-color, var(--c1));
+      border-radius: 4px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .ppt-link:hover, .ppt-link:focus-visible { background: var(--row-color, var(--c1)); color: var(--bg); }
+
     /* EXPERIENCE */
     .experience {
       padding: 6rem 3rem;
@@ -565,82 +584,96 @@
 
     <div class="projects-list">
 
-      <a class="project-row reveal" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/SQL" target="_blank" style="--row-color: var(--c1)">
+      <div class="project-row reveal" style="--row-color: var(--c1)">
+        <a class="row-link" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/SQL" target="_blank" rel="noopener" aria-label="IBM HR Analytics — SQL on GitHub"></a>
         <span class="project-num">01</span>
         <div class="project-info">
           <h3>IBM HR Analytics — SQL</h3>
           <p>Queried and analyzed IBM HR dataset to uncover attrition drivers, compensation patterns, and workforce demographics using advanced SQL.</p>
+          <a class="ppt-link" href="https://claude.ai/artifact/PYmHsv3Wrv9oDHfAxgGDJJ" target="_blank" rel="noopener">ppt ↗</a>
         </div>
         <div class="project-tags">
           <span class="ptag">SQL</span><span class="ptag">MySQL</span><span class="ptag">HR Analytics</span>
         </div>
-      </a>
+      </div>
 
-      <a class="project-row reveal" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Python" target="_blank" style="--row-color: var(--c2)">
+      <div class="project-row reveal" style="--row-color: var(--c2)">
+        <a class="row-link" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Python" target="_blank" rel="noopener" aria-label="Legal Motion Outcome Prediction — NLP on GitHub"></a>
         <span class="project-num">02</span>
         <div class="project-info">
           <h3>Legal Motion Outcome Prediction — NLP</h3>
           <p>Text classification model on federal court opinions. TF-IDF + SVD + scikit-learn to predict legal motion outcomes from linguistic patterns.</p>
+          <a class="ppt-link" href="https://claude.ai/artifact/F63m136fJA1bqC6XgvsH52" target="_blank" rel="noopener">ppt ↗</a>
         </div>
         <div class="project-tags">
           <span class="ptag">Python</span><span class="ptag">NLP</span><span class="ptag">scikit-learn</span>
         </div>
-      </a>
+      </div>
 
-      <a class="project-row reveal" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/R" target="_blank" style="--row-color: var(--c4)">
+      <div class="project-row reveal" style="--row-color: var(--c4)">
+        <a class="row-link" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/R" target="_blank" rel="noopener" aria-label="Global Developer Survey — R on GitHub"></a>
         <span class="project-num">03</span>
         <div class="project-info">
           <h3>Global Developer Survey — R</h3>
           <p>Cleaned and analyzed 65,000+ developer responses across 48 variables. ANOVA, regression, and EDA on salary, education, and experience.</p>
+          <a class="ppt-link" href="https://claude.ai/artifact/3CBAu7c5q8sQaCirukg7mk" target="_blank" rel="noopener">ppt ↗</a>
         </div>
         <div class="project-tags">
           <span class="ptag">R</span><span class="ptag">tidyverse</span><span class="ptag">ANOVA</span>
         </div>
-      </a>
+      </div>
 
-      <a class="project-row reveal" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Python/Final" target="_blank" style="--row-color: var(--c3)">
+      <div class="project-row reveal" style="--row-color: var(--c3)">
+        <a class="row-link" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Python/Final" target="_blank" rel="noopener" aria-label="Sales &amp; Profitability Analysis on GitHub"></a>
         <span class="project-num">04</span>
         <div class="project-info">
           <h3>Sales & Profitability Analysis</h3>
           <p>Regression models and financial dashboards on transactional data. Visualized revenue growth, gross margin, and ROI to optimize pricing strategy.</p>
+          <a class="ppt-link" href="https://claude.ai/artifact/6SVjhUxzvUPiFNPRkoZqsq" target="_blank" rel="noopener">ppt ↗</a>
         </div>
         <div class="project-tags">
           <span class="ptag">Python</span><span class="ptag">Power BI</span><span class="ptag">Regression</span>
         </div>
-      </a>
+      </div>
 
-      <a class="project-row reveal" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/SAS" target="_blank" style="--row-color: var(--c5)">
+      <div class="project-row reveal" style="--row-color: var(--c5)">
+        <a class="row-link" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/SAS" target="_blank" rel="noopener" aria-label="Heart Disease Prediction — SAS on GitHub"></a>
         <span class="project-num">05</span>
         <div class="project-info">
           <h3>Heart Disease Prediction — SAS</h3>
           <p>Predictive analysis on patient data using PCA, clustering, and univariate/bivariate analysis to identify key risk factors for heart disease.</p>
+          <a class="ppt-link" href="https://claude.ai/artifact/CoiEv3fc5UgaNPpDEGqsFo" target="_blank" rel="noopener">ppt ↗</a>
         </div>
         <div class="project-tags">
           <span class="ptag">SAS</span><span class="ptag">PCA</span><span class="ptag">Clustering</span>
         </div>
-      </a>
+      </div>
 
-      <a class="project-row reveal" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Supply-Chain-Optimization" target="_blank" style="--row-color: var(--c2)">
+      <div class="project-row reveal" style="--row-color: var(--c2)">
+        <a class="row-link" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Supply-Chain-Optimization" target="_blank" rel="noopener" aria-label="Supply Chain Optimization on GitHub"></a>
         <span class="project-num">06</span>
         <div class="project-info">
           <h3>Supply Chain Optimization</h3>
           <p>Linear programming and Excel Solver to minimize cost while meeting demand and capacity constraints across a multi-node supply chain network.</p>
+          <a class="ppt-link" href="https://claude.ai/artifact/GsCUFTMZJkV6K8CTJVhMQu" target="_blank" rel="noopener">ppt ↗</a>
         </div>
         <div class="project-tags">
           <span class="ptag">Excel Solver</span><span class="ptag">LP</span><span class="ptag">Optimization</span>
         </div>
-      </a>
+      </div>
 
-      <a class="project-row reveal" href="https://github.com/dhruvk1310-lang/palate-wine-recommender" target="_blank" style="--row-color: var(--c3)">
+      <div class="project-row reveal" style="--row-color: var(--c3)">
+        <a class="row-link" href="https://github.com/dhruvk1310-lang/palate-wine-recommender" target="_blank" rel="noopener" aria-label="Palate — Wine Recommendation SaaS on GitHub"></a>
         <span class="project-num">07</span>
         <div class="project-info">
           <h3>Palate — Wine Recommendation SaaS</h3>
           <p>ML-powered wine recommendation platform for retail. Uses a KNN model trained on wine characteristics to generate personalized picks filtered against live store inventory.</p>
+          <a class="ppt-link" href="https://claude.ai/artifact/KFmT82WGVGwKHr8B9yzZKQ" target="_blank" rel="noopener">ppt ↗</a>
         </div>
         <div class="project-tags">
           <span class="ptag">Python</span><span class="ptag">FastAPI</span><span class="ptag">React</span><span class="ptag">KNN</span><span class="ptag">SaaS</span>
         </div>
-      </a>
+      </div>
 
     </div>
   </section>
