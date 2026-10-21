@@ -251,6 +251,69 @@ body:has(a:hover) #cursor-ring, body:has(button:hover) #cursor-ring { width: 56p
 }
 .chip:hover { border-color: var(--c1); color: var(--c1); }
 
+.about-intro { font-size: 1.05rem; color: var(--text); opacity: 0.8; line-height: 1.8; margin-bottom: 1.25rem; }
+.about-body {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 5rem;
+  align-items: start;
+  margin-top: 6rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--border);
+}
+.story { display: flex; flex-direction: column; gap: 3.5rem; max-width: 720px; }
+.story .story-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent, var(--c1));
+  margin-bottom: 0.75rem;
+}
+.story h3 {
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.story p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.9;
+  margin-bottom: 1rem;
+}
+.story p:last-child { margin-bottom: 0; }
+.story p a { color: var(--text); text-decoration: underline; text-decoration-color: var(--accent, var(--c1)); text-underline-offset: 3px; }
+.story p a:hover, .story p a:focus-visible { color: var(--accent, var(--c1)); }
+.story p strong { color: var(--text); font-weight: 600; }
+.facts {
+  position: sticky;
+  top: 2rem;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.015);
+  padding: 2rem;
+}
+.facts h2 {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+.facts dl { display: flex; flex-direction: column; gap: 1.25rem; }
+.facts dt {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--c1);
+  margin-bottom: 0.3rem;
+}
+.facts dd { font-size: 0.88rem; color: var(--text); line-height: 1.6; }
+.facts dd span { display: block; color: var(--muted); font-size: 0.8rem; }
+
 /* PROJECTS */
 .project-grid {
   display: grid;
@@ -498,6 +561,8 @@ footer {
   .home { padding: 3rem 1.5rem; }
   .home-name { letter-spacing: -2px; }
   .about { grid-template-columns: 1fr; gap: 2.5rem; }
+  .about-body { grid-template-columns: 1fr; gap: 3rem; margin-top: 4rem; padding-top: 3rem; }
+  .facts { position: static; order: -1; padding: 1.5rem; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
   .pub-grid { grid-template-columns: 1fr; }
   .contact h1 { letter-spacing: -2px; }
