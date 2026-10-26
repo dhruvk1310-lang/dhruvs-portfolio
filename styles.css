@@ -284,6 +284,23 @@ body:has(a:hover) #cursor-ring, body:has(button:hover) #cursor-ring { width: 56p
   margin-bottom: 1rem;
 }
 .story p:last-child { margin-bottom: 0; }
+.note {
+  margin-top: 1.5rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent, var(--c1));
+  background: rgba(255,255,255,0.02);
+}
+.story .note-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+.story .note p { font-size: 0.9rem; line-height: 1.8; margin-bottom: 0.75rem; }
+.story .note p:last-child { margin-bottom: 0; }
 .story p a { color: var(--text); text-decoration: underline; text-decoration-color: var(--accent, var(--c1)); text-underline-offset: 3px; }
 .story p a:hover, .story p a:focus-visible { color: var(--accent, var(--c1)); }
 .story p strong { color: var(--text); font-weight: 600; }
