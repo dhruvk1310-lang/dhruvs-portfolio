@@ -179,13 +179,13 @@
       <article class="project-card reveal" style="--accent: var(--c4)">
         <span class="project-num">08</span>
         <h2>Northeast Heating &amp; Cooling Demand Map</h2>
-        <p class="project-desc">In progress. End-to-end pipeline estimating monthly heating oil, propane and AC demand for about 300 counties across nine Northeast states, from public Census, EIA and NOAA data.</p>
+        <p class="project-desc">In progress. End-to-end pipeline estimating monthly heating oil, propane and AC demand for all 218 counties across nine Northeast states, from public Census, EIA and NOAA data.</p>
         <div>
           <h3 class="project-did-label">What I did</h3>
           <ul class="project-did">
-            <li>Planned the project: nine business questions, nine public data sources and a documented demand model.</li>
+            <li>Built a Python pipeline that pulls eight public Census, NOAA and EIA datasets into clean tables, including <strong>county-level</strong> monthly weather back to 1991.</li>
             <li>Designed a demand model: homes on each fuel × gallons per home, spread across months by <strong>heating degree days</strong> and calibrated to EIA state totals.</li>
-            <li>Designed a SQL star schema (5 dimensions, 5 facts), nine analysis queries and four Tableau dashboards. Data collection is next.</li>
+            <li>Mapped Connecticut's 8 old counties onto its 9 new planning regions so the weather and Census data line up. The demand model is next.</li>
           </ul>
         </div>
         <ul class="project-tags" aria-label="Tools">
