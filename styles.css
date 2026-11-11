@@ -148,7 +148,7 @@ body:has(a:hover) #cursor-ring, body:has(button:hover) #cursor-ring { width: 56p
   letter-spacing: -3px;
   margin-bottom: 1.5rem;
 }
-.home-name .line2 { color: transparent; -webkit-text-stroke: 1.5px var(--text); }
+.home-name .line2 { color: var(--bg); -webkit-text-stroke: 3px var(--text); paint-order: stroke fill; }
 .home-tagline {
   font-size: clamp(0.95rem, 1.6vw, 1.1rem);
   color: var(--text);
@@ -522,7 +522,7 @@ body:has(a:hover) #cursor-ring, body:has(button:hover) #cursor-ring { width: 56p
   line-height: 0.9;
   margin-bottom: 3rem;
 }
-.contact h1 .outline { color: transparent; -webkit-text-stroke: 1.5px var(--text); }
+.contact h1 .outline { color: var(--bg); -webkit-text-stroke: 3px var(--text); paint-order: stroke fill; }
 .contact-links { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
 .contact-btn {
   padding: 0.85rem 2rem;
