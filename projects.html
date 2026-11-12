@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Dhruva Khanna</title>
-  <meta name="description" content="Seven data analytics projects by Dhruva Khanna with code and slides: SQL, Python, R, SAS, optimization and an ML product." />
+  <meta name="description" content="Eight data analytics projects by Dhruva Khanna with code and slides: SQL, Python, R, SAS, optimization and an ML product." />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Projects | Dhruva Khanna" />
-  <meta property="og:description" content="Seven data analytics projects by Dhruva Khanna with code and slides: SQL, Python, R, SAS, optimization and an ML product." />
+  <meta property="og:description" content="Eight data analytics projects by Dhruva Khanna with code and slides: SQL, Python, R, SAS, optimization and an ML product." />
   <meta property="og:url" content="https://dhruvk1310-lang.github.io/dhruvs-portfolio/projects.html" />
   <meta property="og:image" content="https://dhruvk1310-lang.github.io/dhruvs-portfolio/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -32,161 +32,41 @@
       <a class="text-link" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio" target="_blank" rel="noopener">All projects on GitHub ↗<span class="sr-only"> (opens in a new tab)</span></a>
     </div>
 
+    <div class="filter-bar reveal" role="group" aria-label="Filter projects by tool">
+      <button type="button" class="chip-btn" data-filter="all" aria-pressed="true">All <span class="chip-count">8</span></button>
+      <button type="button" class="chip-btn" data-filter="python" aria-pressed="false">Python <span class="chip-count">4</span></button>
+      <button type="button" class="chip-btn" data-filter="sql" aria-pressed="false">SQL <span class="chip-count">2</span></button>
+      <button type="button" class="chip-btn" data-filter="r" aria-pressed="false">R <span class="chip-count">1</span></button>
+      <button type="button" class="chip-btn" data-filter="sas" aria-pressed="false">SAS <span class="chip-count">2</span></button>
+      <button type="button" class="chip-btn" data-filter="excel" aria-pressed="false">Excel <span class="chip-count">1</span></button>
+      <button type="button" class="chip-btn" data-filter="tableau" aria-pressed="false">Tableau <span class="chip-count">1</span></button>
+      <button type="button" class="chip-btn" data-filter="ml" aria-pressed="false">Machine learning <span class="chip-count">3</span></button>
+    </div>
+    <p class="filter-status" id="filter-status" aria-live="polite">Showing all 8 projects. Hover or tap a bar for the detail behind it.</p>
+
     <!-- "What I did" bullets were written from the reports in the data-analytics-portfolio and palate-wine-recommender repos, using the corrected figures from the project decks. Review them before relying on them. -->
     <div class="project-grid">
 
-      <article class="project-card reveal" style="--accent: var(--c1)">
-        <span class="project-num">01</span>
-        <h2>IBM HR Analytics - SQL</h2>
-        <p class="project-desc">Queried and analyzed IBM HR dataset to uncover attrition drivers, compensation patterns, and workforce demographics using advanced SQL.</p>
-        <div>
-          <h3 class="project-did-label">What I did</h3>
-          <ul class="project-did">
-            <li>Wrote 10 MySQL queries on 1,470 employee records to measure attrition by department, age, overtime and job satisfaction.</li>
-            <li>Found overtime workers leave at <strong>30.5%</strong> versus <strong>10.4%</strong> for everyone else, and under-25s at <strong>39.2%</strong>, against a 16.1% company average.</li>
-            <li>Turned the findings into six retention recommendations, from overtime monitoring to front-loaded raises.</li>
-          </ul>
-        </div>
-        <ul class="project-tags" aria-label="Tools">
-          <li class="ptag">SQL</li><li class="ptag">MySQL</li><li class="ptag">HR Analytics</li>
-        </ul>
-        <div class="project-actions">
-          <a class="btn btn-outline" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/SQL" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only">: IBM HR Analytics code (opens in a new tab)</span></a>
-          <a class="btn btn-fill" href="decks/Dhruv-Khanna-IBM-HR-Attrition.pdf" target="_blank" rel="noopener">PPT <span aria-hidden="true">↗</span><span class="sr-only">: IBM HR Analytics slides, PDF (opens in a new tab)</span></a>
-        </div>
-      </article>
-
-      <article class="project-card reveal" style="--accent: var(--c2)">
-        <span class="project-num">02</span>
-        <h2>Legal Motion Outcome Prediction - NLP</h2>
-        <p class="project-desc">Text classification model on federal court opinions. Text mining in SAS Enterprise Miner and an interpretable decision tree to predict legal motion outcomes from linguistic patterns. Published on SSRN.</p>
-        <div>
-          <h3 class="project-did-label">What I did</h3>
-          <!-- TODO: these bullets come from the co-authored paper (with Amanda Herbert and Emmanuel Chigowe), not from a repo. Adjust them to describe your own part of the work. -->
-          <ul class="project-did">
-            <li>Built a dataset of <strong>1,535</strong> federal court opinions (D. Conn., 1999 to 2006) with a Python scraper and labeled each motion's outcome.</li>
-            <li>Turned the text into 22 topic features in SAS Enterprise Miner and trained an interpretable decision tree on them plus case facts.</li>
-            <li>Classified <strong>70.3%</strong> of unseen motions correctly; the paper is published on SSRN.</li>
-          </ul>
-        </div>
-        <ul class="project-tags" aria-label="Tools">
-          <li class="ptag">Python</li><li class="ptag">NLP</li><li class="ptag">SAS Enterprise Miner</li><li class="ptag">Decision Trees</li>
-        </ul>
-        <div class="project-actions">
-          <a class="btn btn-outline" href="https://ssrn.com/abstract=5664310" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Legal Motion Outcome Prediction paper on SSRN (opens in a new tab)</span></a>
-          <a class="btn btn-fill" href="decks/Dhruv-Khanna-Legal-Motion-Prediction.pdf" target="_blank" rel="noopener">PPT <span aria-hidden="true">↗</span><span class="sr-only">: Legal Motion Outcome Prediction slides, PDF (opens in a new tab)</span></a>
-        </div>
-      </article>
-
-      <article class="project-card reveal" style="--accent: var(--c4)">
-        <span class="project-num">03</span>
-        <h2>Global Developer Survey - R</h2>
-        <p class="project-desc">Cleaned and analyzed 65,000+ developer responses across 48 variables. ANOVA, regression, and EDA on salary, education, and experience.</p>
-        <div>
-          <h3 class="project-did-label">What I did</h3>
-          <ul class="project-did">
-            <li>Cleaned 65,437 responses in R: filtered invalid pay and satisfaction, converted text ranges to numbers and split multi-select answers into columns.</li>
-            <li>Ran chi-square, ANOVA and correlation tests on about 15,900 complete responses.</li>
-            <li>Showed every test was significant but effects were small: years of coding explains only about <strong>2%</strong> of pay variation.</li>
-          </ul>
-        </div>
-        <ul class="project-tags" aria-label="Tools">
-          <li class="ptag">R</li><li class="ptag">tidyverse</li><li class="ptag">ANOVA</li>
-        </ul>
-        <div class="project-actions">
-          <a class="btn btn-outline" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/R" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only">: Global Developer Survey code (opens in a new tab)</span></a>
-          <a class="btn btn-fill" href="decks/Dhruv-Khanna-Developer-Survey.pdf" target="_blank" rel="noopener">PPT <span aria-hidden="true">↗</span><span class="sr-only">: Global Developer Survey slides, PDF (opens in a new tab)</span></a>
-        </div>
-      </article>
-
-      <article class="project-card reveal" style="--accent: var(--c3)">
-        <span class="project-num">04</span>
-        <h2>Sales &amp; Profitability Analysis</h2>
-        <p class="project-desc">Regression models and financial dashboards on transactional data. Visualized revenue growth, gross margin, and ROI to optimize pricing strategy.</p>
-        <div>
-          <h3 class="project-did-label">What I did</h3>
-          <ul class="project-did">
-            <li>Cleaned 700 transactions in pandas, treated outliers with the IQR rule and engineered profit margin and profit-per-unit metrics.</li>
-            <li>Found profit tracks sales (r = 0.48), not manufacturing price (r = 0.02), with peaks every June and December.</li>
-            <li>Compared linear regression, KNN and a decision tree; the tree cut prediction error by <strong>25%</strong>.</li>
-          </ul>
-        </div>
-        <ul class="project-tags" aria-label="Tools">
-          <li class="ptag">Python</li><li class="ptag">Power BI</li><li class="ptag">Regression</li>
-        </ul>
-        <div class="project-actions">
-          <a class="btn btn-outline" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Python/Final" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only">: Sales and Profitability Analysis code (opens in a new tab)</span></a>
-          <a class="btn btn-fill" href="decks/Dhruv-Khanna-Sales-Profitability.pdf" target="_blank" rel="noopener">PPT <span aria-hidden="true">↗</span><span class="sr-only">: Sales and Profitability Analysis slides, PDF (opens in a new tab)</span></a>
-        </div>
-      </article>
-
-      <article class="project-card reveal" style="--accent: var(--c5)">
-        <span class="project-num">05</span>
-        <h2>Heart Disease Prediction - SAS</h2>
-        <p class="project-desc">Predictive analysis on patient data using PCA, clustering, and univariate/bivariate analysis to identify key risk factors for heart disease.</p>
-        <div>
-          <h3 class="project-did-label">What I did</h3>
-          <ul class="project-did">
-            <li>Profiled 303 patients across 12 clinical measures in SAS with univariate, bivariate and correlation analysis.</li>
-            <li>Used PCA plus hierarchical and k-means clustering to find two consistent patient groups: older and higher risk, younger and lower risk.</li>
-            <li>Translated the groups into care actions, such as prioritizing the higher-risk group for preventive check-ups.</li>
-          </ul>
-        </div>
-        <ul class="project-tags" aria-label="Tools">
-          <li class="ptag">SAS</li><li class="ptag">PCA</li><li class="ptag">Clustering</li>
-        </ul>
-        <div class="project-actions">
-          <a class="btn btn-outline" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/SAS" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only">: Heart Disease project code (opens in a new tab)</span></a>
-          <a class="btn btn-fill" href="decks/Dhruv-Khanna-Heart-Disease-Segmentation.pdf" target="_blank" rel="noopener">PPT <span aria-hidden="true">↗</span><span class="sr-only">: Heart Disease project slides, PDF (opens in a new tab)</span></a>
-        </div>
-      </article>
-
-      <article class="project-card reveal" style="--accent: var(--c2)">
-        <span class="project-num">06</span>
-        <h2>Supply Chain Optimization</h2>
-        <p class="project-desc">Linear programming and Excel Solver to minimize cost while meeting demand and capacity constraints across a multi-node supply chain network.</p>
-        <div>
-          <h3 class="project-did-label">What I did</h3>
-          <ul class="project-did">
-            <li>Modeled 3 warehouses and 6 boutiques as a linear program with 18 routes and 9 constraints in Excel Solver.</li>
-            <li>Cut monthly distribution cost from ₹2,03,800 to ₹1,36,750, a <strong>32.9%</strong> saving worth about ₹8 lakh a year.</li>
-            <li>Ran what-if scenarios showing Bangalore's capacity is the constraint that limits further savings.</li>
-          </ul>
-        </div>
-        <ul class="project-tags" aria-label="Tools">
-          <li class="ptag">Excel Solver</li><li class="ptag">LP</li><li class="ptag">Optimization</li>
-        </ul>
-        <div class="project-actions">
-          <a class="btn btn-outline" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Supply-Chain-Optimization" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only">: Supply Chain Optimization files (opens in a new tab)</span></a>
-          <a class="btn btn-fill" href="decks/Dhruv-Khanna-Supply-Chain-Optimization.pdf" target="_blank" rel="noopener">PPT <span aria-hidden="true">↗</span><span class="sr-only">: Supply Chain Optimization slides, PDF (opens in a new tab)</span></a>
-        </div>
-      </article>
-
-      <article class="project-card reveal" style="--accent: var(--c3)">
-        <span class="project-num">07</span>
-        <h2>Palate - Wine Recommendation SaaS</h2>
-        <p class="project-desc">ML-powered wine recommendation platform for retail. Uses a KNN model trained on wine characteristics to generate personalized picks filtered against live store inventory.</p>
-        <div>
-          <h3 class="project-did-label">What I did</h3>
-          <ul class="project-did">
-            <li>Built a React and FastAPI app: a 5-question taste quiz that returns <strong>3 in-stock wines</strong>, each with a reason for the pick.</li>
-            <li>Designed a two-stage recommender: cosine similarity from day one, blended with a KNN model as purchase data grows.</li>
-            <li>Filtered out-of-stock and over-budget wines before scoring, so every recommendation can be bought in the store.</li>
-          </ul>
-        </div>
-        <ul class="project-tags" aria-label="Tools">
-          <li class="ptag">Python</li><li class="ptag">FastAPI</li><li class="ptag">React</li><li class="ptag">KNN</li><li class="ptag">SaaS</li>
-        </ul>
-        <div class="project-actions">
-          <a class="btn btn-outline" href="https://github.com/dhruvk1310-lang/palate-wine-recommender" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only">: Palate code (opens in a new tab)</span></a>
-          <a class="btn btn-fill" href="decks/Dhruv-Khanna-Palate-Wine-Recommender.pdf" target="_blank" rel="noopener">PPT <span aria-hidden="true">↗</span><span class="sr-only">: Palate slides, PDF (opens in a new tab)</span></a>
-        </div>
-      </article>
-
-      <article class="project-card reveal" style="--accent: var(--c4)">
-        <span class="project-num">08</span>
+      <article class="project-card reveal" id="northeast-heating" data-tools="python sql tableau" style="--accent: var(--c4)">
+        <span class="project-num">Energy &amp; logistics</span>
         <h2>Northeast Heating &amp; Cooling Demand Map</h2>
         <p class="project-desc">End-to-end pipeline estimating monthly heating oil, propane and AC demand for all 218 counties across nine Northeast states, from public Census, EIA and NOAA data.</p>
+        <figure class="result-chart">
+          <figcaption class="rc-title">One dealer's winter truck miles</figcaption>
+          <div class="rc-rows">
+            <div class="rc-row" data-note="Hand-sequenced routes: Routed zone by zone, the way dispatchers do it by hand">
+              <span class="rc-label">Hand-sequenced routes</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 100.0%"></span></span>
+              <span class="rc-value">40,751 mi</span><span class="sr-only">. Routed zone by zone, the way dispatchers do it by hand</span>
+            </div>
+            <div class="rc-row is-hl" data-note="OR-Tools routes: Optimized on real road distances: 2 trucks, zero run-outs">
+              <span class="rc-label">OR-Tools routes</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 66.03%"></span></span>
+              <span class="rc-value">26,909 mi</span><span class="sr-only">. Optimized on real road distances: 2 trucks, zero run-outs</span>
+            </div>
+          </div>
+          <p class="rc-note" data-default="Same 4,493 winter deliveries, 34% fewer truck miles with optimized routes." aria-hidden="true">Same 4,493 winter deliveries, 34% fewer truck miles with optimized routes.</p>
+        </figure>
         <div>
           <h3 class="project-did-label">What I did</h3>
           <ul class="project-did">
@@ -207,6 +87,316 @@
         </div>
       </article>
 
+      <article class="project-card reveal" id="supply-chain" data-tools="excel" style="--accent: var(--c2)">
+        <span class="project-num">Supply chain</span>
+        <h2>Supply Chain Optimization</h2>
+        <p class="project-desc">Linear programming and Excel Solver to minimize cost while meeting demand and capacity constraints across a multi-node supply chain network.</p>
+        <figure class="result-chart">
+          <figcaption class="rc-title">Monthly distribution cost (₹ lakh)</figcaption>
+          <div class="rc-rows">
+            <div class="rc-row" data-note="Proximity-based shipping: ₹2,03,800 a month, 8 routes">
+              <span class="rc-label">Proximity-based shipping</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 100.0%"></span></span>
+              <span class="rc-value">₹2.04L</span><span class="sr-only">. ₹2,03,800 a month, 8 routes</span>
+            </div>
+            <div class="rc-row is-hl" data-note="Optimized plan: ₹1,36,750 a month, 7 routes, every boutique fully served">
+              <span class="rc-label">Optimized plan</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 67.1%"></span></span>
+              <span class="rc-value">₹1.37L</span><span class="sr-only">. ₹1,36,750 a month, 7 routes, every boutique fully served</span>
+            </div>
+          </div>
+          <p class="rc-note" data-default="The optimal shipping plan costs 32.9% less, about ₹8 lakh a year." aria-hidden="true">The optimal shipping plan costs 32.9% less, about ₹8 lakh a year.</p>
+        </figure>
+        <div>
+          <h3 class="project-did-label">What I did</h3>
+          <ul class="project-did">
+            <li>Modeled 3 warehouses and 6 boutiques as a linear program with 18 routes and 9 constraints in Excel Solver.</li>
+            <li>Cut monthly distribution cost from ₹2,03,800 to ₹1,36,750, a <strong>32.9%</strong> saving worth about ₹8 lakh a year.</li>
+            <li>Ran what-if scenarios showing Bangalore's capacity is the constraint that limits further savings.</li>
+          </ul>
+        </div>
+        <ul class="project-tags" aria-label="Tools">
+          <li class="ptag">Excel Solver</li><li class="ptag">LP</li><li class="ptag">Optimization</li>
+        </ul>
+        <div class="project-actions">
+          <a class="btn btn-outline" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Supply-Chain-Optimization" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only">: Supply Chain Optimization files (opens in a new tab)</span></a>
+          <a class="btn btn-fill" href="decks/Dhruv-Khanna-Supply-Chain-Optimization.pdf" target="_blank" rel="noopener">PPT <span aria-hidden="true">↗</span><span class="sr-only">: Supply Chain Optimization slides, PDF (opens in a new tab)</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" id="legal-nlp" data-tools="python sas ml" style="--accent: var(--c2)">
+        <span class="project-num">Legal NLP · published</span>
+        <h2>Legal Motion Outcome Prediction - NLP</h2>
+        <p class="project-desc">Text classification model on federal court opinions. Text mining in SAS Enterprise Miner and an interpretable decision tree to predict legal motion outcomes from linguistic patterns. Published on SSRN.</p>
+        <figure class="result-chart">
+          <figcaption class="rc-title">Motions classified correctly</figcaption>
+          <div class="rc-rows">
+            <div class="rc-row" data-note="Training set: The cases the tree learned from (80% of the data)">
+              <span class="rc-label">Training set</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 100.0%"></span></span>
+              <span class="rc-value">79.7%</span><span class="sr-only">. The cases the tree learned from (80% of the data)</span>
+            </div>
+            <div class="rc-row" data-note="Validation set: Held back to tune the tree (5% of the data)">
+              <span class="rc-label">Validation set</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 97.24%"></span></span>
+              <span class="rc-value">77.5%</span><span class="sr-only">. Held back to tune the tree (5% of the data)</span>
+            </div>
+            <div class="rc-row is-hl" data-note="Test set: Cases the model never saw (15% of the data)">
+              <span class="rc-label">Test set</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 88.21%"></span></span>
+              <span class="rc-value">70.3%</span><span class="sr-only">. Cases the model never saw (15% of the data)</span>
+            </div>
+          </div>
+          <p class="rc-note" data-default="About 7 in 10 motions the model had never seen were classified correctly." aria-hidden="true">About 7 in 10 motions the model had never seen were classified correctly.</p>
+        </figure>
+        <div>
+          <h3 class="project-did-label">What I did</h3>
+          <!-- TODO: these bullets come from the co-authored paper (with Amanda Herbert and Emmanuel Chigowe), not from a repo. Adjust them to describe your own part of the work. -->
+          <ul class="project-did">
+            <li>Built a dataset of <strong>1,535</strong> federal court opinions (D. Conn., 1999 to 2006) with a Python scraper and labeled each motion's outcome.</li>
+            <li>Turned the text into 22 topic features in SAS Enterprise Miner and trained an interpretable decision tree on them plus case facts.</li>
+            <li>Classified <strong>70.3%</strong> of unseen motions correctly; the paper is published on SSRN.</li>
+          </ul>
+        </div>
+        <ul class="project-tags" aria-label="Tools">
+          <li class="ptag">Python</li><li class="ptag">NLP</li><li class="ptag">SAS Enterprise Miner</li><li class="ptag">Decision Trees</li>
+        </ul>
+        <div class="project-actions">
+          <a class="btn btn-outline" href="https://ssrn.com/abstract=5664310" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span><span class="sr-only">: Legal Motion Outcome Prediction paper on SSRN (opens in a new tab)</span></a>
+          <a class="btn btn-fill" href="decks/Dhruv-Khanna-Legal-Motion-Prediction.pdf" target="_blank" rel="noopener">PPT <span aria-hidden="true">↗</span><span class="sr-only">: Legal Motion Outcome Prediction slides, PDF (opens in a new tab)</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" id="ibm-hr" data-tools="sql" style="--accent: var(--c1)">
+        <span class="project-num">HR analytics</span>
+        <h2>IBM HR Analytics - SQL</h2>
+        <p class="project-desc">Queried and analyzed IBM HR dataset to uncover attrition drivers, compensation patterns, and workforce demographics using advanced SQL.</p>
+        <figure class="result-chart">
+          <figcaption class="rc-title">Attrition rate by group</figcaption>
+          <div class="rc-rows">
+            <div class="rc-row" data-note="Under 25: 38 of 97 employees left">
+              <span class="rc-label">Under 25</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 100.0%"></span></span>
+              <span class="rc-value">39.2%</span><span class="sr-only">. 38 of 97 employees left</span>
+            </div>
+            <div class="rc-row is-hl" data-note="Works overtime: 127 of 416 employees left">
+              <span class="rc-label">Works overtime</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 77.81%"></span></span>
+              <span class="rc-value">30.5%</span><span class="sr-only">. 127 of 416 employees left</span>
+            </div>
+            <div class="rc-row" data-note="Lowest job satisfaction: 66 of 289 employees left">
+              <span class="rc-label">Lowest job satisfaction</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 58.16%"></span></span>
+              <span class="rc-value">22.8%</span><span class="sr-only">. 66 of 289 employees left</span>
+            </div>
+            <div class="rc-row" data-note="Sales department: 92 of 446 employees left">
+              <span class="rc-label">Sales department</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 52.55%"></span></span>
+              <span class="rc-value">20.6%</span><span class="sr-only">. 92 of 446 employees left</span>
+            </div>
+            <div class="rc-row" data-note="Company average: 237 of 1,470 employees left">
+              <span class="rc-label">Company average</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 41.07%"></span></span>
+              <span class="rc-value">16.1%</span><span class="sr-only">. 237 of 1,470 employees left</span>
+            </div>
+          </div>
+          <p class="rc-note" data-default="Overtime workers leave at nearly 3x the rate of everyone else (10.4%)." aria-hidden="true">Overtime workers leave at nearly 3x the rate of everyone else (10.4%).</p>
+        </figure>
+        <div>
+          <h3 class="project-did-label">What I did</h3>
+          <ul class="project-did">
+            <li>Wrote 10 MySQL queries on 1,470 employee records to measure attrition by department, age, overtime and job satisfaction.</li>
+            <li>Found overtime workers leave at <strong>30.5%</strong> versus <strong>10.4%</strong> for everyone else, and under-25s at <strong>39.2%</strong>, against a 16.1% company average.</li>
+            <li>Turned the findings into six retention recommendations, from overtime monitoring to front-loaded raises.</li>
+          </ul>
+        </div>
+        <ul class="project-tags" aria-label="Tools">
+          <li class="ptag">SQL</li><li class="ptag">MySQL</li><li class="ptag">HR Analytics</li>
+        </ul>
+        <div class="project-actions">
+          <a class="btn btn-outline" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/SQL" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only">: IBM HR Analytics code (opens in a new tab)</span></a>
+          <a class="btn btn-fill" href="decks/Dhruv-Khanna-IBM-HR-Attrition.pdf" target="_blank" rel="noopener">PPT <span aria-hidden="true">↗</span><span class="sr-only">: IBM HR Analytics slides, PDF (opens in a new tab)</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" id="palate" data-tools="python ml" style="--accent: var(--c3)">
+        <span class="project-num">Retail ML product</span>
+        <h2>Palate - Wine Recommendation SaaS</h2>
+        <p class="project-desc">ML-powered wine recommendation platform for retail. Uses a KNN model trained on wine characteristics to generate personalized picks filtered against live store inventory.</p>
+        <figure class="result-chart">
+          <figcaption class="rc-title">Weight given to the learning model, by purchases logged</figcaption>
+          <div class="rc-rows">
+            <div class="rc-row" data-note="Under 50: Cosine similarity does all the scoring">
+              <span class="rc-label">Under 50</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 0.0%"></span></span>
+              <span class="rc-value">0%</span><span class="sr-only">. Cosine similarity does all the scoring</span>
+            </div>
+            <div class="rc-row" data-note="50+: KNN starts contributing">
+              <span class="rc-label">50+</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 23.53%"></span></span>
+              <span class="rc-value">20%</span><span class="sr-only">. KNN starts contributing</span>
+            </div>
+            <div class="rc-row" data-note="200+: KNN weight rises as purchase data grows">
+              <span class="rc-label">200+</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 47.06%"></span></span>
+              <span class="rc-value">40%</span><span class="sr-only">. KNN weight rises as purchase data grows</span>
+            </div>
+            <div class="rc-row" data-note="500+: KNN now outweighs simple matching">
+              <span class="rc-label">500+</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 70.59%"></span></span>
+              <span class="rc-value">60%</span><span class="sr-only">. KNN now outweighs simple matching</span>
+            </div>
+            <div class="rc-row" data-note="1,000+: Mostly learned from this store">
+              <span class="rc-label">1,000+</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 88.24%"></span></span>
+              <span class="rc-value">75%</span><span class="sr-only">. Mostly learned from this store</span>
+            </div>
+            <div class="rc-row is-hl" data-note="2,000+: Each store runs on its own purchase history">
+              <span class="rc-label">2,000+</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 100.0%"></span></span>
+              <span class="rc-value">85%</span><span class="sr-only">. Each store runs on its own purchase history</span>
+            </div>
+          </div>
+          <p class="rc-note" data-default="Works on day one with simple matching, then hands over to the learning model as sales come in." aria-hidden="true">Works on day one with simple matching, then hands over to the learning model as sales come in.</p>
+        </figure>
+        <div>
+          <h3 class="project-did-label">What I did</h3>
+          <ul class="project-did">
+            <li>Built a React and FastAPI app: a 5-question taste quiz that returns <strong>3 in-stock wines</strong>, each with a reason for the pick.</li>
+            <li>Designed a two-stage recommender: cosine similarity from day one, blended with a KNN model as purchase data grows.</li>
+            <li>Filtered out-of-stock and over-budget wines before scoring, so every recommendation can be bought in the store.</li>
+          </ul>
+        </div>
+        <ul class="project-tags" aria-label="Tools">
+          <li class="ptag">Python</li><li class="ptag">FastAPI</li><li class="ptag">React</li><li class="ptag">KNN</li><li class="ptag">SaaS</li>
+        </ul>
+        <div class="project-actions">
+          <a class="btn btn-outline" href="https://github.com/dhruvk1310-lang/palate-wine-recommender" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only">: Palate code (opens in a new tab)</span></a>
+          <a class="btn btn-fill" href="decks/Dhruv-Khanna-Palate-Wine-Recommender.pdf" target="_blank" rel="noopener">PPT <span aria-hidden="true">↗</span><span class="sr-only">: Palate slides, PDF (opens in a new tab)</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" id="sales-profitability" data-tools="python ml" style="--accent: var(--c3)">
+        <span class="project-num">Finance &amp; ML</span>
+        <h2>Sales &amp; Profitability Analysis</h2>
+        <p class="project-desc">Regression models and financial dashboards on transactional data. Visualized revenue growth, gross margin, and ROI to optimize pricing strategy.</p>
+        <figure class="result-chart">
+          <figcaption class="rc-title">Profit prediction error, lower is better ($M)</figcaption>
+          <div class="rc-rows">
+            <div class="rc-row" data-note="Linear regression: Mean absolute error of $1,523,000">
+              <span class="rc-label">Linear regression</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 100.0%"></span></span>
+              <span class="rc-value">$1.52M</span><span class="sr-only">. Mean absolute error of $1,523,000</span>
+            </div>
+            <div class="rc-row" data-note="K-nearest neighbors: Mean absolute error of $1,308,000">
+              <span class="rc-label">K-nearest neighbors</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 85.88%"></span></span>
+              <span class="rc-value">$1.31M</span><span class="sr-only">. Mean absolute error of $1,308,000</span>
+            </div>
+            <div class="rc-row is-hl" data-note="Decision tree: Mean absolute error of $1,145,000">
+              <span class="rc-label">Decision tree</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 75.18%"></span></span>
+              <span class="rc-value">$1.15M</span><span class="sr-only">. Mean absolute error of $1,145,000</span>
+            </div>
+          </div>
+          <p class="rc-note" data-default="The decision tree cut prediction error by 25% compared with linear regression." aria-hidden="true">The decision tree cut prediction error by 25% compared with linear regression.</p>
+        </figure>
+        <div>
+          <h3 class="project-did-label">What I did</h3>
+          <ul class="project-did">
+            <li>Cleaned 700 transactions in pandas, treated outliers with the IQR rule and engineered profit margin and profit-per-unit metrics.</li>
+            <li>Found profit tracks sales (r = 0.48), not manufacturing price (r = 0.02), with peaks every June and December.</li>
+            <li>Compared linear regression, KNN and a decision tree; the tree cut prediction error by <strong>25%</strong>.</li>
+          </ul>
+        </div>
+        <ul class="project-tags" aria-label="Tools">
+          <li class="ptag">Python</li><li class="ptag">Power BI</li><li class="ptag">Regression</li>
+        </ul>
+        <div class="project-actions">
+          <a class="btn btn-outline" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Python/Final" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only">: Sales and Profitability Analysis code (opens in a new tab)</span></a>
+          <a class="btn btn-fill" href="decks/Dhruv-Khanna-Sales-Profitability.pdf" target="_blank" rel="noopener">PPT <span aria-hidden="true">↗</span><span class="sr-only">: Sales and Profitability Analysis slides, PDF (opens in a new tab)</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" id="developer-survey" data-tools="r" style="--accent: var(--c4)">
+        <span class="project-num">Survey statistics</span>
+        <h2>Global Developer Survey - R</h2>
+        <p class="project-desc">Cleaned and analyzed 65,000+ developer responses across 48 variables. ANOVA, regression, and EDA on salary, education, and experience.</p>
+        <figure class="result-chart">
+          <figcaption class="rc-title">How developers work</figcaption>
+          <div class="rc-rows">
+            <div class="rc-row" data-note="Hybrid: 6,819 respondents">
+              <span class="rc-label">Hybrid</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 100.0%"></span></span>
+              <span class="rc-value">43%</span><span class="sr-only">. 6,819 respondents</span>
+            </div>
+            <div class="rc-row" data-note="Fully remote: 6,460 respondents">
+              <span class="rc-label">Fully remote</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 95.35%"></span></span>
+              <span class="rc-value">41%</span><span class="sr-only">. 6,460 respondents</span>
+            </div>
+            <div class="rc-row is-hl" data-note="Fully in person: 2,619 respondents">
+              <span class="rc-label">Fully in person</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 37.21%"></span></span>
+              <span class="rc-value">16%</span><span class="sr-only">. 2,619 respondents</span>
+            </div>
+          </div>
+          <p class="rc-note" data-default="Only one in six developers works fully in person." aria-hidden="true">Only one in six developers works fully in person.</p>
+        </figure>
+        <div>
+          <h3 class="project-did-label">What I did</h3>
+          <ul class="project-did">
+            <li>Cleaned 65,437 responses in R: filtered invalid pay and satisfaction, converted text ranges to numbers and split multi-select answers into columns.</li>
+            <li>Ran chi-square, ANOVA and correlation tests on about 15,900 complete responses.</li>
+            <li>Showed every test was significant but effects were small: years of coding explains only about <strong>2%</strong> of pay variation.</li>
+          </ul>
+        </div>
+        <ul class="project-tags" aria-label="Tools">
+          <li class="ptag">R</li><li class="ptag">tidyverse</li><li class="ptag">ANOVA</li>
+        </ul>
+        <div class="project-actions">
+          <a class="btn btn-outline" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/R" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only">: Global Developer Survey code (opens in a new tab)</span></a>
+          <a class="btn btn-fill" href="decks/Dhruv-Khanna-Developer-Survey.pdf" target="_blank" rel="noopener">PPT <span aria-hidden="true">↗</span><span class="sr-only">: Global Developer Survey slides, PDF (opens in a new tab)</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" id="heart-disease" data-tools="sas" style="--accent: var(--c5)">
+        <span class="project-num">Healthcare segmentation</span>
+        <h2>Heart Disease Risk Segmentation - SAS</h2>
+        <p class="project-desc">Risk segmentation of patient data using PCA, clustering, and univariate/bivariate analysis to identify key risk factors for heart disease.</p>
+        <figure class="result-chart">
+          <figcaption class="rc-title">ST depression on exercise, by patient group</figcaption>
+          <div class="rc-rows">
+            <div class="rc-row is-hl" data-note="Older, higher-risk group: Mean age 58 to 59, resting blood pressure 134 to 138 mm Hg">
+              <span class="rc-label">Older, higher-risk group</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 100.0%"></span></span>
+              <span class="rc-value">1.70</span><span class="sr-only">. Mean age 58 to 59, resting blood pressure 134 to 138 mm Hg</span>
+            </div>
+            <div class="rc-row" data-note="Younger, lower-risk group: Mean age 51, maximum heart rate 161 to 163 bpm">
+              <span class="rc-label">Younger, lower-risk group</span>
+              <span class="rc-track" aria-hidden="true"><span class="rc-bar" style="width: 21.76%"></span></span>
+              <span class="rc-value">0.37</span><span class="sr-only">. Mean age 51, maximum heart rate 161 to 163 bpm</span>
+            </div>
+          </div>
+          <p class="rc-note" data-default="Two clustering methods agree on an older, higher-risk group of patients." aria-hidden="true">Two clustering methods agree on an older, higher-risk group of patients.</p>
+        </figure>
+        <div>
+          <h3 class="project-did-label">What I did</h3>
+          <ul class="project-did">
+            <li>Profiled 303 patients across 12 clinical measures in SAS with univariate, bivariate and correlation analysis.</li>
+            <li>Used PCA plus hierarchical and k-means clustering to find two consistent patient groups: older and higher risk, younger and lower risk.</li>
+            <li>Translated the groups into care actions, such as prioritizing the higher-risk group for preventive check-ups.</li>
+          </ul>
+        </div>
+        <ul class="project-tags" aria-label="Tools">
+          <li class="ptag">SAS</li><li class="ptag">PCA</li><li class="ptag">Clustering</li>
+        </ul>
+        <div class="project-actions">
+          <a class="btn btn-outline" href="https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/SAS" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only">: Heart Disease project code (opens in a new tab)</span></a>
+          <a class="btn btn-fill" href="decks/Dhruv-Khanna-Heart-Disease-Segmentation.pdf" target="_blank" rel="noopener">PPT <span aria-hidden="true">↗</span><span class="sr-only">: Heart Disease project slides, PDF (opens in a new tab)</span></a>
+        </div>
+      </article>
+
     </div>
   </main>
 
@@ -215,6 +405,6 @@
     <span>dhruvk1310@gmail.com</span>
   </footer>
 
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>

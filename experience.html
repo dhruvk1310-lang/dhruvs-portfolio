@@ -13,7 +13,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -31,8 +31,39 @@
       <h1 class="page-title">Experience</h1>
     </div>
 
+    <section class="career-chart reveal" aria-labelledby="career-title">
+      <div class="cc-head">
+        <h2 class="cc-title" id="career-title">Six years at a glance</h2>
+        <p class="cc-legend"><span class="cc-swatch" aria-hidden="true"></span>Working while studying</p>
+      </div>
+      <div class="cc-plot">
+        <div class="cc-lane">
+          <span class="cc-lane-label">Education</span>
+          <div class="cc-track">
+            <span class="cc-overlap" style="left: 30.95%; width: 20.24%" aria-hidden="true"></span>
+            <span class="cc-overlap" style="left: 79.76%; width: 11.9%" aria-hidden="true"></span>
+            <button type="button" class="cc-bar cc-edu" style="left: 9.52%; width: 41.67%" data-detail="Bachelor of Sports Management, IISM Mumbai · Sept 2020 – Jul 2023 · 2 yrs 11 mos"><span>Sports Management, IISM</span></button>
+            <button type="button" class="cc-bar cc-edu" style="left: 65.48%; width: 26.19%" data-detail="M.S. Business Analytics, Quinnipiac University · Aug 2024 – May 2026 · 1 yr 10 mos, 4.0 GPA"><span>M.S. Business Analytics</span></button>
+          </div>
+        </div>
+        <div class="cc-lane">
+          <span class="cc-lane-label">Work</span>
+          <div class="cc-track">
+            <span class="cc-overlap" style="left: 30.95%; width: 20.24%" aria-hidden="true"></span>
+            <span class="cc-overlap" style="left: 79.76%; width: 11.9%" aria-hidden="true"></span>
+            <button type="button" class="cc-bar cc-work" style="left: 30.95%; width: 33.33%" data-target="exp-decathlon" data-detail="Omni Sport Leader, Decathlon Sports India · Mar 2022 – Jun 2024 · 2 yrs 4 mos"><span>Decathlon</span></button>
+            <button type="button" class="cc-bar cc-work cc-narrow" style="left: 79.76%; width: 11.9%" data-target="exp-blockchain" data-detail="Director of Research and Publications, Quinnipiac Blockchain · Aug 2025 – May 2026 · 10 mos"><span>QU Blockchain</span></button>
+          </div>
+        </div>
+        <div class="cc-axis" aria-hidden="true">
+          <span style="left: 0%">2020</span><span style="left: 14.29%">2021</span><span style="left: 28.57%">2022</span><span style="left: 42.86%">2023</span><span style="left: 57.14%">2024</span><span style="left: 71.43%">2025</span><span style="left: 85.71%">2026</span>
+        </div>
+      </div>
+      <p class="cc-detail" aria-live="polite" data-default="Worked alongside both degrees: 27 months of overlap. Select a bar for details.">Worked alongside both degrees: 27 months of overlap. Select a bar for details.</p>
+    </section>
+
     <ol class="timeline">
-      <li class="timeline-item reveal">
+      <li class="timeline-item reveal" id="exp-blockchain">
         <p class="timeline-date">Aug 2025 – May 2026</p>
         <h2>Director of Research and Publications</h2>
         <p class="company">Quinnipiac Blockchain · Quinnipiac University</p>
@@ -43,7 +74,7 @@
         </ul>
       </li>
 
-      <li class="timeline-item reveal">
+      <li class="timeline-item reveal" id="exp-decathlon">
         <p class="timeline-date">Mar 2022 – Jun 2024</p>
         <h2>Omni Sport Leader</h2>
         <p class="company">Decathlon Sports India · Mumbai</p>
@@ -64,6 +95,6 @@
     <span>dhruvk1310@gmail.com</span>
   </footer>
 
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>

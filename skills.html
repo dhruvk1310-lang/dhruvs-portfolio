@@ -13,7 +13,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -35,55 +35,68 @@
       <section class="skill-group reveal">
         <h2 class="skill-group-title">Languages</h2>
         <ul class="skill-items">
-          <li class="skill-item">Python</li>
-          <li class="skill-item">R</li>
-          <li class="skill-item">SQL</li>
-          <li class="skill-item">SAS</li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="python" aria-pressed="true" aria-controls="skill-panel">Python <span class="skill-count">4</span></button></li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="r" aria-pressed="false" aria-controls="skill-panel">R <span class="skill-count">1</span></button></li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="sql" aria-pressed="false" aria-controls="skill-panel">SQL <span class="skill-count">2</span></button></li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="sas" aria-pressed="false" aria-controls="skill-panel">SAS <span class="skill-count">2</span></button></li>
         </ul>
       </section>
       <section class="skill-group reveal">
         <h2 class="skill-group-title">Analytics &amp; BI</h2>
         <ul class="skill-items">
-          <li class="skill-item">Tableau</li>
-          <li class="skill-item">Power BI</li>
-          <li class="skill-item">Google Analytics</li>
-          <li class="skill-item">Advanced Excel</li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="tableau" aria-pressed="false" aria-controls="skill-panel">Tableau <span class="skill-count">2</span></button></li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="power-bi" aria-pressed="false" aria-controls="skill-panel">Power BI <span class="skill-count">2</span></button></li>
+          <li class="skill-item is-static">Google Analytics</li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="advanced-excel" aria-pressed="false" aria-controls="skill-panel">Advanced Excel <span class="skill-count">3</span></button></li>
         </ul>
       </section>
       <section class="skill-group reveal">
         <h2 class="skill-group-title">Databases</h2>
         <ul class="skill-items">
-          <li class="skill-item">MySQL</li>
-          <li class="skill-item">SQL Server</li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="mysql" aria-pressed="false" aria-controls="skill-panel">MySQL <span class="skill-count">1</span></button></li>
+          <li class="skill-item is-static">SQL Server</li>
         </ul>
       </section>
       <section class="skill-group reveal">
         <h2 class="skill-group-title">Techniques</h2>
         <ul class="skill-items">
-          <li class="skill-item">Predictive Modeling</li>
-          <li class="skill-item">Data Mining</li>
-          <li class="skill-item">NLP / Text Mining</li>
-          <li class="skill-item">Clustering &amp; PCA</li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="predictive-modeling" aria-pressed="false" aria-controls="skill-panel">Predictive Modeling <span class="skill-count">3</span></button></li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="data-mining" aria-pressed="false" aria-controls="skill-panel">Data Mining <span class="skill-count">1</span></button></li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="nlp-text-mining" aria-pressed="false" aria-controls="skill-panel">NLP / Text Mining <span class="skill-count">1</span></button></li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="clustering-pca" aria-pressed="false" aria-controls="skill-panel">Clustering &amp; PCA <span class="skill-count">1</span></button></li>
         </ul>
       </section>
       <section class="skill-group reveal">
         <h2 class="skill-group-title">Optimization</h2>
         <ul class="skill-items">
-          <li class="skill-item">Linear Programming</li>
-          <li class="skill-item">Excel Solver</li>
-          <li class="skill-item">Monte Carlo</li>
-          <li class="skill-item">Operations Research</li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="linear-programming" aria-pressed="false" aria-controls="skill-panel">Linear Programming <span class="skill-count">2</span></button></li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="excel-solver" aria-pressed="false" aria-controls="skill-panel">Excel Solver <span class="skill-count">1</span></button></li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="monte-carlo" aria-pressed="false" aria-controls="skill-panel">Monte Carlo <span class="skill-count">1</span></button></li>
+          <li><button type="button" class="skill-item skill-btn" data-skill="operations-research" aria-pressed="false" aria-controls="skill-panel">Operations Research <span class="skill-count">2</span></button></li>
         </ul>
       </section>
       <section class="skill-group reveal">
         <h2 class="skill-group-title">Certifications</h2>
         <ul class="skill-items">
-          <li class="skill-item">Advanced Excel</li>
-          <li class="skill-item">SQL</li>
-          <li class="skill-item">Sports Analytics</li>
+          <li class="skill-item is-static">Advanced Excel</li>
+          <li class="skill-item is-static">SQL</li>
+          <li class="skill-item is-static">Sports Analytics</li>
         </ul>
       </section>
     </div>
+
+    <section class="skill-panel reveal" id="skill-panel" aria-live="polite">
+      <p class="skill-panel-label">Where I've used it</p>
+      <h2 class="skill-panel-title">Python</h2>
+      <ul class="skill-panel-list">
+          <li><a href="projects.html#northeast-heating">Northeast Heating &amp; Cooling Demand Map</a><span>Energy &amp; logistics</span></li>
+          <li><a href="projects.html#legal-nlp">Legal Motion Outcome Prediction</a><span>Legal NLP · published</span></li>
+          <li><a href="projects.html#sales-profitability">Sales &amp; Profitability Analysis</a><span>Finance &amp; ML</span></li>
+          <li><a href="projects.html#palate">Palate, Wine Recommendation SaaS</a><span>Retail ML product</span></li>
+      </ul>
+      <p class="skill-panel-hint">Select any skill above to see where it shows up in my work.</p>
+    </section>
+    <script type="application/json" id="skill-map">{"python": {"name": "Python", "items": [{"title": "Northeast Heating & Cooling Demand Map", "kind": "Energy & logistics", "href": "projects.html#northeast-heating", "ext": false}, {"title": "Legal Motion Outcome Prediction", "kind": "Legal NLP · published", "href": "projects.html#legal-nlp", "ext": false}, {"title": "Sales & Profitability Analysis", "kind": "Finance & ML", "href": "projects.html#sales-profitability", "ext": false}, {"title": "Palate, Wine Recommendation SaaS", "kind": "Retail ML product", "href": "projects.html#palate", "ext": false}]}, "r": {"name": "R", "items": [{"title": "Global Developer Survey", "kind": "Survey statistics", "href": "projects.html#developer-survey", "ext": false}]}, "sql": {"name": "SQL", "items": [{"title": "Northeast Heating & Cooling Demand Map", "kind": "Energy & logistics", "href": "projects.html#northeast-heating", "ext": false}, {"title": "IBM HR Analytics", "kind": "HR analytics", "href": "projects.html#ibm-hr", "ext": false}]}, "sas": {"name": "SAS", "items": [{"title": "Heart Disease Segmentation", "kind": "Healthcare segmentation", "href": "projects.html#heart-disease", "ext": false}, {"title": "Legal Motion Outcome Prediction", "kind": "Legal NLP · published", "href": "projects.html#legal-nlp", "ext": false}]}, "tableau": {"name": "Tableau", "items": [{"title": "Northeast Heating & Cooling Demand Map", "kind": "Energy & logistics", "href": "projects.html#northeast-heating", "ext": false}, {"title": "Tableau dashboards", "kind": "Coursework on GitHub", "href": "https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Data-Visualization", "ext": true}]}, "power-bi": {"name": "Power BI", "items": [{"title": "Sales & Profitability Analysis", "kind": "Finance & ML", "href": "projects.html#sales-profitability", "ext": false}, {"title": "Power BI dashboards", "kind": "Coursework on GitHub", "href": "https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Data-Visualization", "ext": true}]}, "advanced-excel": {"name": "Advanced Excel", "items": [{"title": "Supply Chain Optimization", "kind": "Supply chain", "href": "projects.html#supply-chain", "ext": false}, {"title": "Decathlon, Omni Sport Leader", "kind": "Work · demand forecasting and MIS dashboards", "href": "experience.html#exp-decathlon", "ext": false}, {"title": "Advanced Excel assignments", "kind": "Coursework on GitHub", "href": "https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Advanced-Excel", "ext": true}]}, "mysql": {"name": "MySQL", "items": [{"title": "IBM HR Analytics", "kind": "HR analytics", "href": "projects.html#ibm-hr", "ext": false}]}, "predictive-modeling": {"name": "Predictive Modeling", "items": [{"title": "Sales & Profitability Analysis", "kind": "Finance & ML", "href": "projects.html#sales-profitability", "ext": false}, {"title": "Legal Motion Outcome Prediction", "kind": "Legal NLP · published", "href": "projects.html#legal-nlp", "ext": false}, {"title": "Palate, Wine Recommendation SaaS", "kind": "Retail ML product", "href": "projects.html#palate", "ext": false}]}, "data-mining": {"name": "Data Mining", "items": [{"title": "Legal Motion Outcome Prediction", "kind": "Legal NLP · published", "href": "projects.html#legal-nlp", "ext": false}]}, "nlp-text-mining": {"name": "NLP / Text Mining", "items": [{"title": "Legal Motion Outcome Prediction", "kind": "Legal NLP · published", "href": "projects.html#legal-nlp", "ext": false}]}, "clustering-pca": {"name": "Clustering & PCA", "items": [{"title": "Heart Disease Segmentation", "kind": "Healthcare segmentation", "href": "projects.html#heart-disease", "ext": false}]}, "linear-programming": {"name": "Linear Programming", "items": [{"title": "Supply Chain Optimization", "kind": "Supply chain", "href": "projects.html#supply-chain", "ext": false}, {"title": "Linear and integer programming", "kind": "Coursework on GitHub", "href": "https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Optimization", "ext": true}]}, "excel-solver": {"name": "Excel Solver", "items": [{"title": "Supply Chain Optimization", "kind": "Supply chain", "href": "projects.html#supply-chain", "ext": false}]}, "monte-carlo": {"name": "Monte Carlo", "items": [{"title": "Monte Carlo simulation", "kind": "Coursework on GitHub", "href": "https://github.com/dhruvk1310-lang/data-analytics-portfolio/tree/main/Optimization/Monte-Carlo-Simulation", "ext": true}]}, "operations-research": {"name": "Operations Research", "items": [{"title": "Supply Chain Optimization", "kind": "Supply chain", "href": "projects.html#supply-chain", "ext": false}, {"title": "Northeast Heating & Cooling Demand Map", "kind": "Energy & logistics", "href": "projects.html#northeast-heating", "ext": false}]}}</script>
   </main>
 
   <footer>
@@ -91,6 +104,6 @@
     <span>dhruvk1310@gmail.com</span>
   </footer>
 
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>
